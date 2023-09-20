@@ -41,7 +41,7 @@ header{
     padding: 1.2vh;
     text-decoration: none;
     font-size: 1.75vh;
-    line-height: 25px;
+    line-height: 2.63vh;
     border-radius: 0.4vh;
     margin-right: 2vh;
     
@@ -75,17 +75,32 @@ footer{
     color: var(--very-light-grey);
 }
 footer p{
-
+    font-size: 1vh;
+    padding: 1vh;
+}
+@media screen and (max-width: 1444px){
+    .main{
+        padding:10vh;        
+    }
+    .main h1{
+        font-size: 8vh;
+        font-weight: 500;
+        color: var(--very-light-grey);
+    }
+    .main p{
+        font-size: 4vh;
+    }
 }
 @media screen and (max-width: 480px){
     .main{
-        padding:3vh;
-        padding-bottom:37vh
+        padding:10vh;        
     }
     .main h1{
-        font-size: 6vh;
+        font-size: 5.5vh;
+        font-weight: 500;
+        color: var(--very-light-grey);
     }
     .main p{
-        font-size: 3vh;
+        font-size: 2vh;
     }
 }
