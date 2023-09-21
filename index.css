@@ -20,7 +20,11 @@ body{
 header{
     overflow: hidden;
     background-color: var(--dark-grey);
-    padding: 20px 10px;
+    padding: 2.7vh 1.35vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 .logo{
     height: 4vh;
@@ -52,7 +56,7 @@ header{
 }
 .main{
     padding: 30vh;
-    padding-bottom: 37.3vh;
+    padding-bottom: 33.3vh;
 }
 .main h1{
     font-size: 10vh;
@@ -64,6 +68,33 @@ header{
     font-size: 4vh;
     color: var(--light-grey);
 
+}
+.sec-2{
+
+}
+.sec-2 h2{
+    padding-bottom: 3vh;
+    padding-left: 30vh;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5vh;
+    padding-bottom: 10vh;
+}
+.card{
+    background-color: var(--light-grey);
+    max-width: fit-content;
+    border-radius: 1.7vh;
+}
+.content{
+
+}
+.content .content-title{
+    text-align: center;
+}
+.content .content-image{
+    padding-bottom: 3vh;
 }
 footer{
     background-color: var(--dark);
