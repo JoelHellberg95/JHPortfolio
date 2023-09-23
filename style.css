@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -54,6 +55,7 @@ header{
     background-color: var(--grey);
     color: var(--white);
 }
+
 .main{
     padding: 30vh;
     padding-bottom: 33.3vh;
@@ -135,4 +137,46 @@ footer p{
         font-size: 2vh;
     }
 }
+/*Main-Css Index.html slut*/
+/*Projekt-css Projekt.html Start*/
 
+/*Projekt-css Projekt.html Slut*/
+.mina-projekt{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-top: 20vh;
+}
+.project-card{
+    background-color: var(--white);
+    width: fit-content;
+    max-width: 290px;
+    border-radius: 18px;
+    padding: 14px;
+    text-align: center;
+    margin:auto;
+}
+.project-card img{
+    width: 250px;
+    padding-top: 2vh;
+    border-radius: 12px;
+}
+.project-card h2{
+    color: var(--dark);
+    padding-top: 1vh;
+}
+.project-card p{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project-tech{
+    padding-top: 10px;
+}
+.project-tech img{
+    width: 50px;
+}
