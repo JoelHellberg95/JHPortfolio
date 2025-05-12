@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from "../../assets/bilder/hs logo transparent.png";
+import logo from "../../assets/hs-logo-transparent.png .png";
 
 function Navbar() {
     return (
