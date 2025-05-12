@@ -13,12 +13,12 @@ function Footer() {
                 <a href="https://spotify.com" target="_blank" rel="noopener noreferrer">
                     <i className="fa-brands fa-spotify"></i>
                 </a>
-                <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">
-                    <i className="fa-brands fa-dribbble"></i>
+                <a href="https://discord.gg/GJe563jP" target="_blank" rel="noopener noreferrer">
+                    <i className="fa-brands fa-discord"></i>
                 </a>
             </div>
 
-            <p className="footer-copy">© 2025 Hellberg Portfolio.</p>
+            <p className="footer-copy">© 2025 Hellberg Systems.</p>
         </footer>
     );
 }

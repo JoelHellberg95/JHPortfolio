@@ -1,4 +1,6 @@
+import About from "../features/About/About.jsx";
+
 function AboutPage() {
-    return <h1>Om oss</h1>;
+    return <About />;
 }
 export default AboutPage;

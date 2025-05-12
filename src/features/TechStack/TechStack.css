@@ -1,0 +1,49 @@
+.tech-stack-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.tech-stack-section h2 {
+    color: var(--color-heading);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.stack-category {
+    margin-top: 3rem;
+}
+
+.stack-category h3 {
+    font-size: 1.5rem;
+    color: var(--color-heading);
+    margin-bottom: 1.5rem;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--color-muted);
+}
+
+.tech-item i {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.tech-item i:hover {
+    transform: scale(1.2);
+    color: var(--color-accent);
+}
