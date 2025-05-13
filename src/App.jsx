@@ -4,13 +4,11 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import Navbar from './layouts/Navbar/Navbar.jsx';
 import Footer from './layouts/Footer/Footer.jsx';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 function App() {
     return (
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <SpeedInsights/>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
