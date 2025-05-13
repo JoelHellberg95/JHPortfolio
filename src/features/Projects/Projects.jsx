@@ -8,14 +8,14 @@ function Projects() {
         {
             title: 'Docser',
             description: 'Dokumentation & serviceplattform för entreprenadfordon.',
-            image: 'src/assets/bilder/Projekt/Docser/Docser.jpeg',
+            image: 'src/assets/Docser/Docser.jpeg',
             link: 'https://docser-app-gouux.ondigitalocean.app/',
             stack: ['devicon-react-original', 'devicon-nodejs-plain', 'devicon-css3-plain']
         },
         {
             title: 'Hellberg Portfolio',
             description: 'Personlig webbplats byggd i React & CSS.',
-            image: 'src/assets/bilder/Projekt/Portfolio/Portfolio.png',
+            image: 'src/assets/Portfolio/Portfolio.png',
             link: 'https://github.com/JoelHellberg/JHPortfolio',
             stack: ['devicon-react-original', 'devicon-html5-plain', 'devicon-css3-plain']
         },
@@ -28,9 +28,9 @@ function Projects() {
         },
         {
             title: 'QR Code Project',
-            description: 'Enkelt QR-kodsprojekt',
-            image: 'src/assets/bilder/Projekt/Qr-Code Project.jpg',
-            link: 'https://github.com/JoelHellberg/Qr-Code-Project',
+            description: 'Enkelt QR-Komponent',
+            image: 'src/assets/QR-Project/Qr-Code Project.jpg',
+            link: 'https://github.com/JoelHellberg95/qr-code-component-main',
             stack: ['devicon-html5-plain', 'devicon-css3-plain']
         }
     ];
