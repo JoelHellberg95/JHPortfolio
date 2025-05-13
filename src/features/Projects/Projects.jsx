@@ -1,5 +1,9 @@
 import './Projects.css';
 import { useState } from 'react';
+import 'src/assets/QR-Project/Qr-Code Project.jpg'
+import 'src/assets/Portfolio/Portfolio.png'
+import 'src/assets/Docser/Docser.jpeg'
+import 'src/assets/hs-logo-transparent.png'
 
 function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
