@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from "../../assets/hs-logo-transparent.png .png";
+
 
 function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <div className="logo"><img src={logo} alt="Hellberg Systems" style={{ width: "100px" }} /></div>
+                <div className="logo"><img src="/src/assets/hs-logo-transparent.png" alt="Hellberg Systems" style={{ width: "100px" }} /></div>
                 <div className="nav-links">
                     <Link to="/">Hem</Link>
                     <Link to="/about">Om</Link>

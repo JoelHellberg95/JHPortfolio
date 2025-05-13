@@ -1,4 +1,4 @@
-import logo from "../../assets/hs-logo-transparent.png";
+import logo from '../../assets/hs-logo-transparent.png';
 import './Footer.css';
 
 function Footer() {
