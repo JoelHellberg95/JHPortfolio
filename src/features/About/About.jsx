@@ -1,11 +1,11 @@
 import './About.css';
 import TechStack from '../TechStack/TechStack';
-
+import 'public/ai-joel.jpg'
 function About() {
     return (
         <section className="about-section">
             <h2>Om mig</h2>
-            <img className={"profile-pic"} src="/src/assets/ai-joel.jpg" alt="Joel" />
+            <img className={"profile-pic"} src="/ai-joel.jpg" alt="Joel" />
             <div className="about-content">
                 <div className="about-text">
                     <p>Hej! Jag heter Joel och är en mångsidig utvecklare med fokus på frontend, backend och praktisk problemlösning. Jag gillar att bygga smarta system, snygga gränssnitt och robusta API:er.</p>

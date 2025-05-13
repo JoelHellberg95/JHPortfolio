@@ -1,10 +1,10 @@
 import './Projects.css';
 import { useState } from 'react';
-import 'src/assets/QR-Project/Qr-Code Project.jpg'
-import 'src/assets/Portfolio/Portfolio.png'
-import 'src/assets/Docser/Docser.jpeg'
-import 'src/assets/hs-logo-transparent.png'
-
+import 'public/ai-joel.jpg'
+import 'public/Portfolio.png'
+import 'public/Docser.jpeg'
+import 'public/hs-logo-transparent.png'
+import 'public/Qr-Code Project.jpg'
 function Projects() {
     const [selectedProject, setSelectedProject] = useState(null);
 
@@ -33,7 +33,7 @@ function Projects() {
         {
             title: 'QR Code Project',
             description: 'Enkelt QR-Komponent',
-            image: 'src/assets/QR-Project/Qr-Code Project.jpg',
+            image: 'Qr-Code Project.jpg',
             link: 'https://github.com/JoelHellberg95/qr-code-component-main',
             stack: ['devicon-html5-plain', 'devicon-css3-plain']
         }
