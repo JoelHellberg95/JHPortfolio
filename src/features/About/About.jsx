@@ -1,6 +1,5 @@
 import './About.css';
 import TechStack from '../TechStack/TechStack';
-import 'public/ai-joel.jpg'
 function About() {
     return (
         <section className="about-section">
