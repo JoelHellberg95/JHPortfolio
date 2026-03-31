@@ -1,28 +1,148 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="script" href="index.js">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakta Joel Hellberg – fullstack-utvecklare baserad i Värnamo.">
+  <title>Kontakt – Joel Hellberg</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="bilder/jhlogovit.png" alt="jhlogo" class="logo"></a>
-        
-        <nav>
-            <div class="navmenu">
-            <a href="index.html">Hem</a>
-            <a href="projekt.html">Projekt</a>
-            <a class="active" href="kontakt.html">Kontakt</a>
-            </div>
-        </nav>
-    </header>
 
-    <footer>
-        <p>Joel Hellberg 2023</p>
-    </footer>
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Hem">
+        <img src="bilder/jhlogovit.png" alt="JH">
+      </a>
+      <button class="hamburger" aria-label="Öppna meny" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav aria-label="Huvudmeny">
+        <a class="nav-link" href="index.html">Hem</a>
+        <a class="nav-link" href="projekt.html">Projekt</a>
+        <a class="nav-link active" href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <span class="section-label reveal">Kontakt</span>
+        <h1 class="section-title reveal">Kontakta mig</h1>
+
+        <div class="contact-inner">
+
+          <!-- Left: intro text -->
+          <div class="contact-intro">
+            <p class="reveal">
+              Har du ett projekt du vill diskutera, en jobbmöjlighet att dela
+              med dig av, eller vill du bara säga hej? Hör gärna av dig — jag
+              svarar så snart jag kan.
+            </p>
+            <p class="reveal">
+              Jag tar examen i <strong>maj 2026</strong> och är öppen för
+              heltidstjänster, praktik och frilansuppdrag från och med
+              sommaren 2026.
+            </p>
+          </div>
+
+          <!-- Right: contact items -->
+          <div>
+            <div class="contact-list stagger">
+
+              <!-- Email -->
+              <a class="contact-item" href="mailto:Joel@Hellbergsystems.se">
+                <div class="contact-icon">
+                  <!-- Email icon -->
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2-8 5-8-5h16zm0 12H4V8.868l8 5 8-5V18z"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">E-post</span>
+                  <span class="contact-value">Joel@Hellbergsystems.se</span>
+                </div>
+              </a>
+
+              <!-- GitHub -->
+              <a
+                class="contact-item"
+                href="https://github.com/JoelHellberg95"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="contact-icon">
+                  <img src="bilder/github-mark.png" alt="">
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">JoelHellberg95</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn placeholder -->
+              <a class="contact-item" href="#" aria-label="LinkedIn (kommer snart)">
+                <div class="contact-icon">
+                  <img src="bilder/LI-In-Bug.png" alt="">
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value">Kommer snart</span>
+                </div>
+              </a>
+
+              <!-- Facebook placeholder -->
+              <a class="contact-item" href="#" aria-label="Facebook (kommer snart)">
+                <div class="contact-icon">
+                  <!-- Facebook icon -->
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"/>
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <span class="contact-label">Facebook</span>
+                  <span class="contact-value">Kommer snart</span>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="footer-year">2026</span> Joel Hellberg
+      </p>
+      <div class="footer-socials">
+        <a
+          href="https://github.com/JoelHellberg95"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <img src="bilder/github-mark.png" alt="GitHub">
+        </a>
+        <a href="#" aria-label="LinkedIn (kommer snart)">
+          <img src="bilder/LI-In-Bug.png" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

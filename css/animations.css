@@ -1,0 +1,52 @@
+/* Spin keyframe used by hero photo ring */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Scroll reveal — elements start hidden and transition in when .visible is added */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible,
+.reveal-left.visible,
+.reveal-right.visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* Stagger — children animate in sequence once parent gains .visible */
+.stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stagger.visible > *:nth-child(1)  { transition-delay: 0ms; }
+.stagger.visible > *:nth-child(2)  { transition-delay: 70ms; }
+.stagger.visible > *:nth-child(3)  { transition-delay: 140ms; }
+.stagger.visible > *:nth-child(4)  { transition-delay: 210ms; }
+.stagger.visible > *:nth-child(5)  { transition-delay: 280ms; }
+.stagger.visible > *:nth-child(6)  { transition-delay: 350ms; }
+.stagger.visible > *:nth-child(7)  { transition-delay: 420ms; }
+.stagger.visible > *:nth-child(8)  { transition-delay: 490ms; }
+.stagger.visible > *:nth-child(n+9){ transition-delay: 560ms; }
+
+.stagger.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}

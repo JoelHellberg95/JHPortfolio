@@ -1,62 +1,213 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JHPortfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="script" href="index.js">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joel Hellberg – Fullstack-utvecklare baserad i Värnamo, specialiserad inom .NET, Next.js och Tailwind CSS.">
+  <title>Joel Hellberg – Fullstack Developer</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="bilder/jhlogovit.png" alt="jhlogo" class="logo"></a>
-        
-        <nav>
-            <div class="navmenu">
-            <a class="active" href="index.html">Hem</a>
-            <a href="projekt.html">Projekt</a>
-            <a href="kontakt.html">Kontakt</a>
-            </div>
-        </nav>
-    </header>
-    
-    <div class="main">
-        <h1>Joel Hellberg</h1>
-        <p class="role">Webbutvecklare</p>
+
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Hem">
+        <img src="bilder/jhlogovit.png" alt="JH">
+      </a>
+      <button class="hamburger" aria-label="Öppna meny" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav aria-label="Huvudmeny">
+        <a class="nav-link active" href="index.html">Hem</a>
+        <a class="nav-link" href="projekt.html">Projekt</a>
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+      </nav>
     </div>
-    <div class="sec-2">
-        <h2>Mina färdigheter</h2>
-        <div class="wrapper">
-        <div class="card">
-            <div class="content">
-                <h3 class="content-title">Html</h3>
-                <img class="content-image" src="bilder/HTML5.png" alt="HTML5">
+  </header>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section class="hero">
+      <div class="container hero-inner">
+
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <span class="hero-badge-dot"></span>
+            Tillgänglig för möjligheter
+          </div>
+
+          <h1 class="hero-title reveal">
+            Joel<br>
+            <span class="hero-title-accent">Hellberg</span>
+          </h1>
+
+          <p class="hero-subtitle reveal">
+            Fullstack-utvecklare baserad i Värnamo — med fokus på
+            modern webbutveckling inom .NET, Next.js och Tailwind CSS.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="projekt.html" class="btn btn-primary">Se mina projekt</a>
+            <a href="kontakt.html" class="btn btn-outline">Kontakta mig</a>
+          </div>
+        </div>
+
+        <div class="hero-photo-wrap reveal-right">
+          <div class="hero-photo-ring" aria-hidden="true"></div>
+          <div class="hero-photo-inner" aria-hidden="true"></div>
+          <img
+            class="hero-photo"
+            src="bilder/jh.jpg"
+            alt="Joel Hellberg"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Om mig ── -->
+    <section class="section section-alt">
+      <div class="container">
+        <span class="section-label reveal">Om mig</span>
+
+        <div class="about-inner">
+
+          <div class="about-text">
+            <h2 class="section-title reveal">
+              Hej, jag är Joel!
+            </h2>
+
+            <p class="reveal">
+              Jag är en <strong>fullstack-utvecklare</strong> baserad i
+              <strong>Värnamo</strong> som brinner för att bygga moderna,
+              skalbara och användarvänliga webbapplikationer.
+            </p>
+
+            <p class="reveal">
+              Jag specialiserar mig inom <strong>.NET-webbutveckling</strong>
+              på backendsidan och <strong>Next.js med Tailwind CSS</strong>
+              på frontendsidan — vilket ger mig möjligheten att ta ett projekt
+              hela vägen från idé till färdig produkt.
+            </p>
+
+            <div class="about-highlight reveal">
+              Öppen för jobbmöjligheter och spännande projekt
+              från och med sommaren 2026.
             </div>
-        </div>
-        <div class="card">
-            <div class="content">
-                <h3 class="content-title">Css</h3>
-                <img class="content-image" src="bilder/CSS3.png" alt="CSS3">
+          </div>
+
+          <div class="about-details stagger">
+            <div class="about-detail-item">
+              <span class="about-detail-icon">📍</span>
+              <div class="about-detail-text">
+                <span class="about-detail-label">Plats</span>
+                <span class="about-detail-value">Värnamo, Sverige</span>
+              </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="content">
-                <h3 class="content-title">JavaScript</h3>
-                <img class="content-image" src="bilder/JavaScript.png" alt="JavaScript">
+            <div class="about-detail-item">
+              <span class="about-detail-icon">🎓</span>
+              <div class="about-detail-text">
+                <span class="about-detail-label">Examen</span>
+                <span class="about-detail-value">Maj 2026</span>
+              </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="content">
-                <h3 class="content-title">Wordpress</h3>
-                <img class="content-image" src="bilder/Wordpress.png" alt="Wordpress">
+            <div class="about-detail-item">
+              <span class="about-detail-icon">💻</span>
+              <div class="about-detail-text">
+                <span class="about-detail-label">Fokus</span>
+                <span class="about-detail-value">Fullstack – .NET &amp; Next.js</span>
+              </div>
             </div>
+            <div class="about-detail-item">
+              <span class="about-detail-icon">✉️</span>
+              <div class="about-detail-text">
+                <span class="about-detail-label">E-post</span>
+                <span class="about-detail-value">Joel@Hellbergsystems.se</span>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
+    </section>
+
+    <!-- ── Färdigheter ── -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label reveal">Teknik</span>
+        <h2 class="section-title reveal">Mina färdigheter</h2>
+        <p class="section-desc reveal">
+          Tekniker och verktyg jag arbetar med dagligen.
+        </p>
+
+        <div class="skills-grid stagger">
+          <div class="skill-card">
+            <img src="bilder/HTML5.png" alt="HTML5">
+            <span>HTML5</span>
+          </div>
+          <div class="skill-card">
+            <img src="bilder/CSS3.png" alt="CSS3">
+            <span>CSS3</span>
+          </div>
+          <div class="skill-card">
+            <img src="bilder/JavaScript.png" alt="JavaScript">
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-card">
+            <img src="bilder/c#.png" alt="C#">
+            <span>C#</span>
+          </div>
+          <div class="skill-card">
+            <img src="bilder/Wordpress.png" alt="WordPress">
+            <span>WordPress</span>
+          </div>
+          <div class="skill-card">
+            <img src="bilder/Photoshop.png" alt="Photoshop">
+            <span>Photoshop</span>
+          </div>
+          <div class="skill-card">
+            <img src="bilder/Illustrator.png" alt="Illustrator">
+            <span>Illustrator</span>
+          </div>
+          <div class="skill-card">
+            <img src="bilder/XD.png" alt="Adobe XD">
+            <span>Adobe XD</span>
+          </div>
         </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="footer-year">2026</span> Joel Hellberg
+      </p>
+      <div class="footer-socials">
+        <a
+          href="https://github.com/JoelHellberg95"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <img src="bilder/github-mark.png" alt="GitHub">
+        </a>
+        <a href="#" aria-label="LinkedIn (kommer snart)">
+          <img src="bilder/LI-In-Bug.png" alt="LinkedIn">
+        </a>
+      </div>
     </div>
-    
-    <footer>
-        <p>Joel Hellberg 2023</p>
-    </footer>
+  </footer>
+
 </body>
 </html>

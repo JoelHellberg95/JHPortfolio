@@ -1,29 +1,165 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="script" href="index.js">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joel Hellbergs projekt – fullstack-applikationer byggda med Next.js, Tailwind CSS och C#.">
+  <title>Projekt – Joel Hellberg</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="bilder/jhlogovit.png" alt="jhlogo" class="logo"></a>
-        
-        <nav>
-            <div class="navmenu">
-            <a href="index.html">Hem</a>
-            <a class="active" href="projekt.html">Projekt</a>
-            <a href="kontakt.html">Kontakt</a>
-            </div>
-        </nav>
-    </header>
-    
 
-    <footer>
-        <p>Joel Hellberg 2023</p>
-    </footer>
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Hem">
+        <img src="bilder/jhlogovit.png" alt="JH">
+      </a>
+      <button class="hamburger" aria-label="Öppna meny" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav aria-label="Huvudmeny">
+        <a class="nav-link" href="index.html">Hem</a>
+        <a class="nav-link active" href="projekt.html">Projekt</a>
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <div class="projects-header">
+          <span class="section-label reveal">Portfolio</span>
+          <h1 class="section-title reveal">Mina projekt</h1>
+          <p class="section-desc reveal">
+            Ett urval av projekt jag byggt — från fullstack-webbappar
+            till REST-API:er och designprojekt.
+          </p>
+        </div>
+
+        <div class="projects-grid stagger">
+
+          <!-- Placeholder 1 – Next.js / Tailwind -->
+          <!-- TODO: Replace with real project -->
+          <article class="project-card">
+            <div class="project-card-image">
+              <span class="placeholder-label">Skärmdump kommer</span>
+            </div>
+            <div class="project-card-body">
+              <h2 class="project-card-title">E-handelsplattform</h2>
+              <p class="project-card-desc">
+                En modern e-handelsplattform med produktlisting, varukorg
+                och kassaflöde. Byggd med Next.js App Router och stylas
+                med Tailwind CSS.
+              </p>
+              <div class="project-card-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">TypeScript</span>
+              </div>
+              <div class="project-card-links">
+                <a href="#" class="btn btn-outline btn-sm" aria-label="Visa kod (kommer snart)">
+                  Kod
+                </a>
+                <a href="#" class="btn btn-primary btn-sm" aria-label="Live demo (kommer snart)">
+                  Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Placeholder 2 – C# / .NET -->
+          <!-- TODO: Replace with real project -->
+          <article class="project-card">
+            <div class="project-card-image">
+              <span class="placeholder-label">Skärmdump kommer</span>
+            </div>
+            <div class="project-card-body">
+              <h2 class="project-card-title">.NET REST API</h2>
+              <p class="project-card-desc">
+                Ett RESTful API byggt med ASP.NET Core och Entity Framework.
+                Inkluderar JWT-autentisering, CRUD-operationer och
+                Swagger-dokumentation.
+              </p>
+              <div class="project-card-tags">
+                <span class="tag">C#</span>
+                <span class="tag">ASP.NET Core</span>
+                <span class="tag">Entity Framework</span>
+              </div>
+              <div class="project-card-links">
+                <a href="#" class="btn btn-outline btn-sm" aria-label="Visa kod (kommer snart)">
+                  Kod
+                </a>
+                <a href="#" class="btn btn-primary btn-sm" aria-label="Live demo (kommer snart)">
+                  Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Placeholder 3 – Fullstack -->
+          <!-- TODO: Replace with real project -->
+          <article class="project-card">
+            <div class="project-card-image">
+              <span class="placeholder-label">Skärmdump kommer</span>
+            </div>
+            <div class="project-card-body">
+              <h2 class="project-card-title">Fullstack-webbapp</h2>
+              <p class="project-card-desc">
+                En fullstack-applikation med Next.js som frontend och
+                ett C# Web API som backend. Inkluderar användarhantering
+                och databasintegration via SQL Server.
+              </p>
+              <div class="project-card-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">C#</span>
+                <span class="tag">SQL Server</span>
+              </div>
+              <div class="project-card-links">
+                <a href="#" class="btn btn-outline btn-sm" aria-label="Visa kod (kommer snart)">
+                  Kod
+                </a>
+                <a href="#" class="btn btn-primary btn-sm" aria-label="Live demo (kommer snart)">
+                  Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="footer-year">2026</span> Joel Hellberg
+      </p>
+      <div class="footer-socials">
+        <a
+          href="https://github.com/JoelHellberg95"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <img src="bilder/github-mark.png" alt="GitHub">
+        </a>
+        <a href="#" aria-label="LinkedIn (kommer snart)">
+          <img src="bilder/LI-In-Bug.png" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

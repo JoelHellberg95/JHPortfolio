@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Colors */
+  --dark:            #0D0D0D;
+  --dark-surface:    #141414;
+  --surface:         #1C1C1C;
+  --surface-raised:  #242424;
+  --border:          #2A2A2A;
+  --border-subtle:   #1F1F1F;
+
+  --text-primary:    #F1F1F1;
+  --text-secondary:  #A0A0A0;
+  --text-muted:      #5A5A5A;
+
+  --accent:          #22C55E;
+  --accent-dark:     #16A34A;
+  --accent-subtle:   rgba(34, 197, 94, 0.08);
+  --accent-border:   rgba(34, 197, 94, 0.2);
+
+  /* Typography */
+  --font:      'Poppins', sans-serif;
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+
+  /* Spacing */
+  --sp-1:  0.25rem;
+  --sp-2:  0.5rem;
+  --sp-3:  0.75rem;
+  --sp-4:  1rem;
+  --sp-5:  1.25rem;
+  --sp-6:  1.5rem;
+  --sp-8:  2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+
+  /* Layout */
+  --container:     1200px;
+  --header-height: 72px;
+
+  /* Borders */
+  --radius-sm:   0.25rem;
+  --radius:      0.5rem;
+  --radius-lg:   0.75rem;
+  --radius-xl:   1rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --t-fast: 0.15s ease;
+  --t:      0.2s ease;
+  --t-slow: 0.4s ease;
+}
